@@ -1,6 +1,7 @@
 import './App.css'
 import { Routes, Route, NavLink } from "react-router-dom"
 import RoutesList from './routesList'
+import { generatePath } from './utils/generatePath'
 
 function App() {
 
@@ -10,9 +11,12 @@ function App() {
                 <nav>
                     {RoutesList.map((route, index) => (
                         route.header && (
-                            <NavLink className={({isActive}) => { 
-                                return isActive ? 'nav-link-active' : ''
-                            }} key={index} to={route.path} exact={route.exact}>
+                            <NavLink
+                                className={({ isActive }) => isActive ? 'nav-link-active' : ''}
+                                key={index}
+                                to={generatePath(route.name)}
+                                exact={route.exact}
+                            >
                                 {route.name}
                             </NavLink>
                         )

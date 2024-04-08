@@ -14,8 +14,6 @@ const Input = () => {
     };
 
     const handleAddPost = () => {
-        console.log(state);
-        console.log(state.input.title.trim());
         if (state.input.title.trim() && state.input.content.trim()) {
             dispatch({ type: 'addPost' })
         } else {
