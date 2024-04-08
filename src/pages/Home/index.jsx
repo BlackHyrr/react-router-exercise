@@ -1,12 +1,11 @@
 import React from 'react';
+import PostsList from '../../components/PostsList';
 
 const Home = () => {
     return (
         <div>
-            <h1>Welcome to our Home Page!</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisl nec aliquam lacinia, nunc nunc tincidunt elit, id luctus nunc justo vel nunc. Nullam auctor, nisl nec aliquam lacinia, nunc nunc tincidunt elit, id luctus nunc justo vel nunc.</p>
-            <p>Phasellus euismod, nunc nec aliquam lacinia, nunc nunc tincidunt elit, id luctus nunc justo vel nunc. Nullam auctor, nisl nec aliquam lacinia, nunc nunc tincidunt elit, id luctus nunc justo vel nunc.</p>
-            <p>Donec euismod, nunc nec aliquam lacinia, nunc nunc tincidunt elit, id luctus nunc justo vel nunc. Nullam auctor, nisl nec aliquam lacinia, nunc nunc tincidunt elit, id luctus nunc justo vel nunc.</p>
+            <h1>List of posts</h1>
+            <PostsList />
         </div>
     );
 };
