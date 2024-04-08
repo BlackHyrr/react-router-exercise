@@ -1,10 +1,10 @@
 import Home from './pages/Home/index.jsx'
 import About from './pages/About/index.jsx'
-import Join from './pages/Join/index.jsx'
+import AddPost from './pages/AddPost/index.jsx'
 
 const RoutesList = [
     { path: '/', component: <Home/> ,name: "Home" },
-    { path: '/join', component: <Join/>, name: "Join" },
+    { path: '/addpost', component: <AddPost/>, name: "Add post" },
     { path: '/about', component: <About/>, name: "About" },
 ]
 
