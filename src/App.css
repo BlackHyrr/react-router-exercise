@@ -19,5 +19,12 @@ nav a{
 }
 
 .nav-link-active {
-  color:#2a63ad;
+  color:#3cd1ff;
 }
+
+@media (prefers-color-scheme: light) {
+  nav a {
+    color: #000;
+  }
+}
+
