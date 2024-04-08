@@ -6,8 +6,6 @@ function App() {
 
     return (
         <>
-            {console.log('ok')}
-            {console.log(RoutesList)}
             <header>
                 <nav>
                     {RoutesList.map((route, index) => (
