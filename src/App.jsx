@@ -9,18 +9,20 @@ function App() {
             <header>
                 <nav>
                     {RoutesList.map((route, index) => (
-                        <NavLink className={({isActive}) => { 
-                           return isActive ? 'nav-link-active' : ''
-                        }} key={index} to={route.path} exact={route.exact}>
-                            {route.name}
-                        </NavLink>
+                        route.header && (
+                            <NavLink className={({isActive}) => { 
+                                return isActive ? 'nav-link-active' : ''
+                            }} key={index} to={route.path} exact={route.exact}>
+                                {route.name}
+                            </NavLink>
+                        )
                     ))}
                 </nav>
             </header>
             <main>
                 <Routes>
-                    {RoutesList.map((route, index) => (
-                        <Route key={index} path={route.path} element={route.component} />
+                    {RoutesList.map((_, index) => (
+                        <Route key={index} path={_.path} element={_.component} />
                     ))}
                 </Routes>
             </main>
